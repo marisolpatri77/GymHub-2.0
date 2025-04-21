@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <meta name="description" content="Descubre las clases exclusivas de GymHub: HIIT, Yoga, Crossfit, Spinning y más. Transforma tu cuerpo con nuestros programas de entrenamiento.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/clases.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- Header transparente con mega-menú -->
+    <header class="header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                        <h1>GYM<span>HUB</span></h1>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto main-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="clases.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">Clases <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Cardio</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Fuerza</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#crossfit">Crossfit</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#power">Power Lifting</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#funcional">Entrenamiento Funcional</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Mente-Cuerpo</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Fusion</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Restaurativo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="entrenadores.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Entrenadores <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="entrenadores.html#personal">Entrenadores Personales</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#grupales">Instructores de Clases</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#nutricion">Nutricionistas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Botón para cambiar entre modo oscuro y claro -->
+                <button id="theme-toggle" class="theme-toggle ms-3" aria-label="Cambiar tema" aria-pressed="false">
+                    <i class="fas fa-moon dark-icon" aria-hidden="true"></i>
+                    <i class="fas fa-sun light-icon" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section para Clases -->
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="hero-background">
+                <img src="assets/img/clases2.jpg" alt="" class="w-100 h-100 object-fit-cover" aria-hidden="true">
+            </div>
+            <div class="hero-content container">
+                <h1 id="page-hero-heading" class="animate-on-scroll" data-animation="fadeInDown">NUESTRAS <span>CLASES</span></h1>
+                <p class="animate-on-scroll" data-animation="fadeInUp" data-delay="300">Descubre una amplia variedad de clases diseñadas para todos los niveles y objetivos</p>
+            </div>
+        </section>
+
+        <!-- Sección de Filtro de Clases con jQuery -->
+        <section class="classes-filter section" aria-labelledby="classes-filter-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="classes-filter-heading">ENCUENTRA TU CLASE IDEAL</h2>
+                    <p>Filtra por categoría para descubrir la clase que mejor se adapte a tus objetivos</p>
+                </div>
+
+                <div class="row justify-content-center mb-4">
+                    <div class="col-lg-8">
+                        <div class="filter-options d-flex flex-wrap justify-content-center gap-2" role="group" aria-label="Filtros de clases">
+                            <button type="button" class="btn btn-filter active" data-filter="all">Todos</button>
+                            <button type="button" class="btn btn-filter" data-filter="hiit">HIIT</button>
+                            <button type="button" class="btn btn-filter" data-filter="yoga">Yoga</button>
+                            <button type="button" class="btn btn-filter" data-filter="crossfit">Crossfit</button>
+                            <button type="button" class="btn btn-filter" data-filter="spinning">Spinning</button>
+                            <button type="button" class="btn btn-filter" data-filter="pilates">Pilates</button>
+                            <button type="button" class="btn btn-filter" data-filter="zumba">Zumba</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galería tipo masonry con Bootstrap y jQuery -->
+                <div class="row masonry-gallery" id="gallery-container">
+                    <!-- HIIT -->
+                    <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="hiit" id="hiit">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/hiit.jpg" class="card-img-top" alt="Clase de HIIT">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>HIIT EXTREME</h3>
+                                        <p>Entrenamiento de alta intensidad que quema calorías y mejora tu resistencia.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">HIIT EXTREME</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 30 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Muy Alta</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/profe1.jpg" alt="Carlos Martínez" class="instructor-avatar">
+                                    <span>Carlos Martínez</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yoga -->
+                    <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="yoga" id="yoga">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/yoga.jpg" class="card-img-top" alt="Clase de Yoga">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>YOGA FUSION</h3>
+                                        <p>Combina fuerza y flexibilidad con nuestra clase de yoga de alto rendimiento.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">YOGA FUSION</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 60 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Media</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/profeyoga.jpg" alt="Laura Gómez" class="instructor-avatar">
+                                    <span>Laura Gómez</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Crossfit -->
+                    <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="crossfit" id="crossfit">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/crossfit1.jpg" class="card-img-top" alt="Clase de Crossfit">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>CROSSFIT ELITE</h3>
+                                        <p>Entrenamiento funcional de alta intensidad que combina fuerza, resistencia y agilidad.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">CROSSFIT ELITE</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 45 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Alta</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/trainer-hiit.jpg" alt="Miguel Torres" class="instructor-avatar">
+                                    <span>Miguel Torres</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spinning -->
+                    <div class="col-lg-6 col-md-6 mb-4 gallery-item" data-category="spinning" id="spinning">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/spinning3.jpg" class="card-img-top" alt="Clase de Spinning">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>SPINNING PRO</h3>
+                                        <p>Pedalea al ritmo de la música con esta clase cardiovascular de alta energía.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">SPINNING PRO</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 45 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Alta</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/profe-spinning.jpg" alt="Roberto Sánchez" class="instructor-avatar">
+                                    <span>Roberto Sánchez</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yoga Restaurativo -->
+                    <div class="col-lg-6 col-md-6 mb-4 gallery-item" data-category="yoga">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/yoga-restaurativo.jpeg" class="card-img-top" alt="Clase de Yoga Restaurativo">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>YOGA RESTAURATIVO</h3>
+                                        <p>Recupera el equilibrio con esta clase de yoga enfocada en la relajación y flexibilidad.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">YOGA RESTAURATIVO</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 75 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Baja</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/profeyoga.jpg" alt="Laura Gómez" class="instructor-avatar">
+                                    <span>Laura Gómez</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Power Lifting -->
+                    <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="crossfit" id="power">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/powelifting.jpg" class="card-img-top" alt="Clase de Power Lifting">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>POWER LIFTING</h3>
+                                        <p>Desarrolla fuerza y potencia con nuestro programa de levantamiento de peso.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">POWER LIFTING</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 60 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Alta</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/trainer-hiit.jpg" alt="Miguel Torres" class="instructor-avatar">
+                                    <span>Miguel Torres</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pilates -->
+                    <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="pilates" id="pilates">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/pilates.jpg" class="card-img-top" alt="Clase de Pilates">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>PILATES CORE</h3>
+                                        <p>Fortalece tu núcleo y mejora tu postura con nuestras clases de pilates.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">PILATES CORE</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 55 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Media</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/profe-zumba.jpg" alt="Elena Martín" class="instructor-avatar">
+                                    <span>Elena Martín</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zumba -->
+                    <div class="col-lg-4 col-md-6 mb-4 gallery-item" data-category="zumba">
+                        <div class="card class-card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/zumba4.jpg" class="card-img-top" alt="Clase de Zumba">
+                                <div class="class-overlay">
+                                    <div class="overlay-content">
+                                        <h3>ZUMBA PARTY</h3>
+                                        <p>Baila y quema calorías con nuestra divertida clase de Zumba.</p>
+                                        <a href="#" class="btn btn-sm btn-primary">RESERVAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">ZUMBA PARTY</h3>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 50 min</span>
+                                    <span><i class="bi bi-fire"></i> Intensidad Media-Alta</span>
+                                </div>
+                                <div class="class-instructor">
+                                    <img src="assets/img/profe-zumba.jpg" alt="Elena Martín" class="instructor-avatar">
+                                    <span>Elena Martín</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horarios de Clases con tabla responsiva de Bootstrap -->
+        <section class="schedule section" aria-labelledby="schedule-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="schedule-heading">HORARIOS DE CLASES</h2>
+                    <p>Planifica tu semana con nuestro horario completo de clases</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover schedule-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Hora</th>
+                                <th scope="col">Lunes</th>
+                                <th scope="col">Martes</th>
+                                <th scope="col">Miércoles</th>
+                                <th scope="col">Jueves</th>
+                                <th scope="col">Viernes</th>
+                                <th scope="col">Sábado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>07:00</td>
+                                <td class="class-hiit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Carlos Martínez">HIIT</td>
+                                <td class="class-spinning" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Roberto Sánchez">Spinning</td>
+                                <td class="class-hiit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Carlos Martínez">HIIT</td>
+                                <td class="class-spinning" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Roberto Sánchez">Spinning</td>
+                                <td class="class-hiit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Carlos Martínez">HIIT</td>
+                                <td class="class-yoga" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Laura Gómez">Yoga</td>
+                            </tr>
+                            <tr>
+                                <td>09:00</td>
+                                <td class="class-yoga" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Laura Gómez">Yoga</td>
+                                <td class="class-crossfit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Miguel Torres">Crossfit</td>
+                                <td class="class-yoga" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Laura Gómez">Yoga</td>
+                                <td class="class-crossfit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Miguel Torres">Crossfit</td>
+                                <td class="class-yoga" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Laura Gómez">Yoga</td>
+                                <td class="class-crossfit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Miguel Torres">Crossfit</td>
+                            </tr>
+                            <tr>
+                                <td>12:00</td>
+                                <td class="class-spinning" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Roberto Sánchez">Spinning</td>
+                                <td class="class-hiit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Carlos Martínez">HIIT</td>
+                                <td class="class-spinning" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Roberto Sánchez">Spinning</td>
+                                <td class="class-hiit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Carlos Martínez">HIIT</td>
+                                <td class="class-spinning" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Roberto Sánchez">Spinning</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>17:00</td>
+                                <td class="class-crossfit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Miguel Torres">Crossfit</td>
+                                <td class="class-yoga" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Laura Gómez">Yoga</td>
+                                <td class="class-crossfit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Miguel Torres">Crossfit</td>
+                                <td class="class-yoga" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Laura Gómez">Yoga</td>
+                                <td class="class-crossfit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Miguel Torres">Crossfit</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>19:00</td>
+                                <td class="class-hiit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Carlos Martínez">HIIT</td>
+                                <td class="class-spinning" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Roberto Sánchez">Spinning</td>
+                                <td class="class-crossfit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Miguel Torres">Power Lifting</td>
+                                <td class="class-zumba" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Elena Martín">Zumba</td>
+                                <td class="class-hiit" data-bs-toggle="tooltip" data-bs-placement="top" title="Instructor: Carlos Martínez">HIIT</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Leyenda para la tabla de horarios -->
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-8">
+                        <div class="schedule-legend d-flex flex-wrap justify-content-center">
+                            <div class="legend-item me-3 mb-2">
+                                <span class="legend-color class-hiit"></span>
+                                <span class="legend-text">HIIT</span>
+                            </div>
+                            <div class="legend-item me-3 mb-2">
+                                <span class="legend-color class-yoga"></span>
+                                <span class="legend-text">Yoga</span>
+                            </div>
+                            <div class="legend-item me-3 mb-2">
+                                <span class="legend-color class-crossfit"></span>
+                                <span class="legend-text">Crossfit</span>
+                            </div>
+                            <div class="legend-item me-3 mb-2">
+                                <span class="legend-color class-spinning"></span>
+                                <span class="legend-text">Spinning</span>
+                            </div>
+                            <div class="legend-item me-3 mb-2">
+                                <span class="legend-color class-zumba"></span>
+                                <span class="legend-text">Zumba</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas Frecuentes con Accordion de Bootstrap -->
+        <section class="faq-section section alt-bg" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>PREGUNTAS FRECUENTES</h3>
+                    <h2 id="faq-heading">RESOLVEMOS TUS DUDAS</h2>
+                    <p>Encuentra respuestas a las preguntas más comunes sobre nuestras clases.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="accordion" id="faqAccordion">
+
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">
+                                    ¿Necesito experiencia previa para unirme a las clases?
+                                </button>
+                            </h2>
+                            <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>No, todas nuestras clases están diseñadas para adaptarse a diferentes niveles. Los instructores ofrecen variaciones para principiantes, intermedios y avanzados. ¡Solo necesitas entusiasmo y ganas de aprender!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                                    ¿Cómo puedo reservar una clase?
+                                </button>
+                            </h2>
+                            <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Puedes reservar clases a través de nuestra aplicación móvil, en nuestra página web o directamente en recepción. Recomendamos reservar con al menos 2 horas de antelación para asegurar tu plaza.</p>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+                                    ¿Qué debo llevar a las clases?
+                                </button>
+                            </h2>
+                            <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Recomendamos ropa cómoda deportiva, una toalla, una botella de agua y, dependiendo de la clase, puede ser necesario calzado específico. Para yoga y pilates proporcionamos esterillas, pero puedes traer la tuya si lo prefieres.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
+                                    ¿Puedo cancelar una reserva?
+                                </button>
+                            </h2>
+                            <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí, puedes cancelar hasta 1 hora antes del inicio de la clase sin penalización. Las cancelaciones con menos tiempo o no presentarse pueden resultar en un cargo o restricciones para futuras reservas.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">RESERVA TU PRIMERA CLASE GRATIS</h2>
+                <p>Prueba cualquiera de nuestras clases sin compromiso y descubre la diferencia GymHub.</p>
+                <a href="contacto.html" class="btn btn-dark">RESERVAR AHORA</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer con formulario de newsletter y mapa -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-copyright">
+                &copy; 2025 GymHub. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/main.js"></script>
+    <script src="js/clases.js"></script>
+</body>
+</html>

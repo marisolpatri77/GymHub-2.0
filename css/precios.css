@@ -1,0 +1,550 @@
+/* Estilos específicos para la página de precios con Bootstrap */
+
+/* Hero de página */
+.page-hero {
+    height: 70vh; 
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.page-hero .hero-background img {
+    filter: brightness(0.7);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-content h1 span {
+    color: var(--accent);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--white);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Toggle entre plan mensual y anual con Bootstrap */
+.pricing-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.toggle-label {
+    font-weight: 600;
+    margin: 0 var(--spacing-sm);
+    cursor: pointer;
+}
+
+.monthly-label {
+    color: var(--accent);
+}
+
+.annual-label {
+    opacity: 0.6;
+}
+
+.discount {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+/* Personalización del switch de Bootstrap */
+.form-check-input {
+    width: 3rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Tarjetas de precios */
+.pricing-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-fast);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    height: 100%;
+}
+
+/* Efecto de resaltado al pasar el cursor */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent);
+}
+
+/* Plan destacado */
+.pricing-card.featured {
+    border: 2px solid var(--accent);
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--accent);
+    color: var(--black);
+    padding: 5px 15px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.pricing-header {
+    padding: var(--spacing-md);
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.pricing-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.pricing-price {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--accent);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    line-height: 1;
+    position: relative;
+    margin-top: 10px;
+}
+
+.price-container {
+    position: relative;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+}
+
+.price-period {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+    margin-left: 5px;
+}
+
+/* Precios mensuales/anuales */
+.price.monthly {
+    display: block;
+}
+
+.price.annual {
+    display: none;
+}
+
+/* Características del plan */
+.pricing-features {
+    padding: var(--spacing-md);
+    flex-grow: 1;
+}
+
+.list-unstyled{
+    padding-left: 30px;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+}
+
+.pricing-features i {
+    color: var(--accent);
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.feature-disabled {
+    opacity: 0.6;
+}
+
+.feature-disabled i {
+    color: #f44336;
+}
+
+/* Tooltips de Bootstrap personalizados */
+.tooltip-btn {
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+
+.tooltip-btn:hover, 
+.tooltip-btn:focus {
+    color: var(--accent);
+}
+
+/* Footer de la tarjeta */
+.pricing-footer {
+    padding: var(--spacing-md);
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.pricing-footer .btn {
+    width: 100%;
+}
+
+.btn-primary{
+    border: 1px solid var(--accent);
+}
+
+.btn-primary:hover{
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline {
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+.btn-outline:hover{
+    background-color: var(--accent);
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.light-mode .btn-outline {
+    border: 2px solid var(--black);
+    color: var(--black);
+}
+
+.light-mode .btn-outline:hover{
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+/* Tabla comparativa */
+.comparison-table {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    border-color: var(--border-color);
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+    text-align: left;
+}
+
+.comparison-table thead th {
+    background-color: rgba(255, 217, 0, 0.8);
+    border-bottom: 2px solid var(--accent);
+    font-weight: 700;
+}
+
+.comparison-table .highlight-column {
+    background-color: rgb(255, 236, 129);
+    position: relative;
+}
+
+.comparison-table .price-row {
+    font-weight: 700;
+}
+
+.comparison-table .monthly-row.active,
+.comparison-table .annual-row.active {
+    display: table-row;
+}
+
+.comparison-table .monthly-row:not(.active),
+.comparison-table .annual-row:not(.active) {
+    display: none;
+}
+
+
+.comparison-table .price-value {
+    color: green;
+    font-weight: bolder;
+}
+
+/* Información adicional */
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-fast);
+    height: 100%;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    background-color: var(--accent);
+    color: var(--black);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.info-content h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.info-content p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Sección de FAQ con Bootstrap Accordion */
+.faq-section {
+    background-color: var(--secondary-bg);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background-color: var(--card-bg);
+    border: none;
+}
+
+.accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text);
+    font-weight: 600;
+    padding: 20px;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 215, 0, 0.05);
+    color: var(--accent);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--accent);
+}
+
+.accordion-button::after {
+    color: var(--accent);
+}
+
+.dark-mode .accordion-button::after {
+    filter: brightness(0) invert(1); 
+  }
+
+.accordion-body {
+    padding: 0 20px 20px;
+    color: #999;
+}
+
+
+/* Animaciones para elementos */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.fadeInDown {
+    transform: translateY(-20px);
+}
+
+.animate-on-scroll.fadeInUp {
+    transform: translateY(20px);
+}
+
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modo claro */
+.light-mode .pricing-card {
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 2px solid #e0e0e0;
+}
+
+.light-mode .pricing-card:hover,
+.light-mode .pricing-card.featured {
+    border-color: var(--accent);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .info-card {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.light-mode .faq-item {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.light-mode .info-content p,
+.light-mode .accordion-body p {
+    color: #555;
+}
+
+.light-mode .comparison-table {
+    background-color: #ffffff;
+}
+
+.light-mode .accordion-button {
+    background-color: #ffffff;
+}
+
+.light-mode .accordion-button:not(.collapsed) {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.footer {
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .page-hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1.03);
+    }
+
+    .pricing-card.featured:hover {
+        transform: scale(1.03) translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+        order: -1;
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+
+    .info-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-hero {
+        height: 50vh;
+        min-height: 300px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .pricing-toggle {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .toggle-label {
+        margin: var(--spacing-xs) 0;
+    }
+
+    .pricing-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .pricing-price {
+        font-size: 2rem;
+    }
+
+    .info-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-icon {
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .footer-copyright {
+        font-size: 0.9rem; 
+        line-height: 1.4; 
+        text-align: center; 
+    }
+  
+}

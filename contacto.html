@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <meta name="description" content="Contacta con GymHub. Estamos aquí para responder tus preguntas y ayudarte a comenzar tu transformación física.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Header transparente con mega-menú -->
+    <header class="header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                        <h1>GYM<span>HUB</span></h1>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto main-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Clases <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Cardio</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Fuerza</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#crossfit">Crossfit</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#power">Power Lifting</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#funcional">Entrenamiento Funcional</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Mente-Cuerpo</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Fusion</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Restaurativo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="entrenadores.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Entrenadores <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="entrenadores.html#personal">Entrenadores Personales</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#grupales">Instructores de Clases</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#nutricion">Nutricionistas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link active">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Botón para cambiar entre modo oscuro y claro -->
+                <button id="theme-toggle" class="theme-toggle ms-3" aria-label="Cambiar tema" aria-pressed="false">
+                    <i class="fas fa-moon dark-icon" aria-hidden="true"></i>
+                    <i class="fas fa-sun light-icon" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section para Contacto -->
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="hero-background">
+                <img src="assets/img/cover2.jpg" alt="Persona entrenando en el gimnasio" class="w-100 h-100 object-fit-cover position-absolute" aria-hidden="true">
+            </div>
+            <div class="hero-content container">
+                <h1 id="page-hero-heading" class="animate-on-scroll" data-animation="fadeInDown">CONTACTA <span>CON NOSOTROS</span></h1>
+                <p class="animate-on-scroll" data-animation="fadeInUp" data-delay="300">Estamos aquí para responder tus preguntas y ayudarte a comenzar tu transformación física</p>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto con Formulario Avanzado -->
+        <section class="contact-section section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>COMUNÍCATE</h3>
+                    <h2 id="contact-heading">ENVÍANOS TU MENSAJE</h2>
+                    <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Información de contacto -->
+                    <div class="col-lg-4">
+                        <div class="contact-info">
+                            <div class="info-card mb-3">
+                                <div class="info-icon">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Dirección</h3>
+                                    <p>Juan Bautista Alberdi 11, Barrio Centro, San Salvador de Jujuy</p>
+                                </div>
+                            </div>
+
+                            <div class="info-card mb-3">
+                                <div class="info-icon">
+                                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Teléfono</h3>
+                                    <p>+54 388 5234 567</p>
+                                    <p>Lun-Vie: 7:00-22:00 | Sáb: 8:00-18:00</p>
+                                </div>
+                            </div>
+
+                            <div class="info-card mb-3">
+                                <div class="info-icon">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <p>info@gymhub.com | soporte@gymhub.com</p>
+                                </div>
+                            </div>
+
+                            <div class="social-media">
+                                <h3>Síguenos</h3>
+                                <div class="social-icons">
+                                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de contacto avanzado -->
+                    <div class="col-lg-8">
+                        <div class="contact-form-container">
+                            <form id="contactForm" class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="2" maxlength="50">
+                                            <label for="nombre">Nombre <span class="text-danger">*</span></label>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa tu nombre (mínimo 2 caracteres).
+                                            </div>
+                                            <div class="valid-feedback">
+                                                ¡Perfecto!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Tu apellido" required minlength="2" maxlength="50">
+                                            <label for="apellido">Apellido <span class="text-danger">*</span></label>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa tu apellido (mínimo 2 caracteres).
+                                            </div>
+                                            <div class="valid-feedback">
+                                                ¡Perfecto!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="tu.email@ejemplo.com" required>
+                                            <label for="email">Email <span class="text-danger">*</span></label>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa un email válido.
+                                            </div>
+                                            <div class="valid-feedback">
+                                                ¡Perfecto!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Tu número de teléfono" pattern="[0-9\+\-\s]{7,15}">
+                                            <label for="telefono">Teléfono</label>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa un número válido.
+                                            </div>
+                                            <div class="valid-feedback">
+                                                ¡Perfecto!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto de tu mensaje" required minlength="5" maxlength="100">
+                                            <label for="asunto">Asunto <span class="text-danger">*</span></label>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa el asunto de tu mensaje (mínimo 5 caracteres).
+                                            </div>
+                                            <div class="valid-feedback">
+                                                ¡Perfecto!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." style="height: 150px" required minlength="10"></textarea>
+                                            <label for="mensaje">Mensaje <span class="text-danger">*</span></label>
+                                            <div class="invalid-feedback">
+                                                Por favor, ingresa un mensaje de al menos 10 caracteres.
+                                            </div>
+                                            <div class="valid-feedback">
+                                                ¡Perfecto!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+                                            <label class="form-check-label" for="terminos">
+                                                Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a> <span class="text-danger">*</span>
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Debes aceptar los términos y condiciones.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary submit-btn">
+                                            <span class="btn-text">Enviar Mensaje</span>
+                                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa de ubicación -->
+        <section class="map-section mt-5">
+            <div class="container">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14558.067581960235!2d-65.29459955259084!3d-24.18867000422116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bae433e99%3A0x6b20d1359e16d579!2sJuan%20Bautista%20Alberdi%2011%2C%20Y4600%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1744257998982!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de GymHub"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de confirmación (Bootstrap) -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-4">
+                    <div class="modal-icon mb-3">
+                        <i class="fas fa-check-circle fa-4x text-success" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="modal-title fs-3 mb-3" id="confirmationModalLabel">¡Mensaje Enviado!</h3>
+                    <p class="mb-4">Gracias por contactarnos. Hemos recibido tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+                    <button type="button" class="btn btn-primary px-4 py-2" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-copyright">
+            &copy; 2025 GymHub. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/main.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

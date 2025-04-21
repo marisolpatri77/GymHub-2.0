@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+    <meta name="description" content="Descubre nuestros planes de membresía flexibles en GymHub. Planes mensuales y anuales con acceso a todas nuestras instalaciones y clases premium.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/precios.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- Header transparente con mega-menú -->
+    <header class="header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                        <h1>GYM<span>HUB</span></h1>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto main-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Clases <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Cardio</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Fuerza</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#crossfit">Crossfit</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#power">Power Lifting</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#funcional">Entrenamiento Funcional</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Mente-Cuerpo</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Fusion</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Restaurativo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="entrenadores.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Entrenadores <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="entrenadores.html#personal">Entrenadores Personales</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#grupales">Instructores de Clases</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#nutricion">Nutricionistas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link active">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Botón para cambiar entre modo oscuro y claro -->
+                <button id="theme-toggle" class="theme-toggle ms-3" aria-label="Cambiar tema" aria-pressed="false">
+                    <i class="fas fa-moon dark-icon" aria-hidden="true"></i>
+                    <i class="fas fa-sun light-icon" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section para Precios -->
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="hero-background">
+                <img src="assets/img/cover-precios3.jpg" alt="Instalaciones de GymHub" class="w-100 h-100 object-fit-cover" aria-hidden="true">
+            </div>
+            <div class="hero-content container">
+                <h1 id="page-hero-heading" class="animate-on-scroll" data-animation="fadeInDown">NUESTROS <span>PLANES</span></h1>
+                <p class="animate-on-scroll" data-animation="fadeInUp" data-delay="300">Descubre el plan que mejor se adapta a tus objetivos y necesidades</p>
+            </div>
+        </section>
+
+        <!-- Sección de Planes de Precios -->
+        <section class="pricing-section section" aria-labelledby="pricing-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>MEMBRESÍAS FLEXIBLES</h3>
+                    <h2 id="pricing-heading">ELIGE TU PLAN</h2>
+                    <p>Ofrecemos planes adaptados a diferentes necesidades y objetivos. Todos incluyen acceso a nuestras instalaciones premium.</p>
+                </div>
+
+                <!-- Toggle entre plan mensual y anual con Bootstrap -->
+                <div class="pricing-container">
+                    <div class="pricing-toggle mb-4">
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center">
+                            <span class="toggle-label monthly-label me-3">Mensual</span>
+                            <input class="form-check-input mx-2" type="checkbox" id="pricing-switch" role="switch">
+                            <label class="form-check-label toggle-label annual-label" for="pricing-switch">
+                                Anual <span class="badge bg-warning text-dark ms-2 discount">20% descuento</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Tabla de precios con efecto de resaltado -->
+                    <div class="row pricing-table">
+                        <!-- Plan Básico -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="pricing-card h-100">
+                                <div class="pricing-header">
+                                    <h3>Básico</h3>
+                                    <div class="pricing-price">
+                                        <div class="price-container">
+                                            <div class="price monthly">$29.900</div>
+                                            <div class="price annual">$23.900</div>
+                                        </div>
+                                        <span class="price-period">/mes</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso a sala de musculación</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso a área cardiovascular</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Horario limitado (8:00 - 17:00)</span>
+                                            <button type="button" class="btn btn-link p-0 ms-2 tooltip-btn" 
+                                                data-bs-toggle="tooltip" 
+                                                data-bs-placement="top" 
+                                                data-bs-title="Acceso de lunes a viernes en horario reducido">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                        </li>
+                                        <li class="feature-disabled">
+                                            <i class="fas fa-times"></i>
+                                            <span>Clases grupales</span>
+                                        </li>
+                                        <li class="feature-disabled">
+                                            <i class="fas fa-times"></i>
+                                            <span>Acceso a piscina y sauna</span>
+                                        </li>
+                                        <li class="feature-disabled">
+                                            <i class="fas fa-times"></i>
+                                            <span>Entrenador personal</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-footer mt-auto">
+                                    <a href="contacto.html" class="btn btn-outline">Elegir Plan</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Plan Estándar (Destacado) -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="pricing-card featured h-100">
+                                <div class="pricing-badge">Popular</div>
+                                <div class="pricing-header">
+                                    <h3>Estándar</h3>
+                                    <div class="pricing-price">
+                                        <div class="price-container">
+                                            <div class="price monthly">$49.900</div>
+                                            <div class="price annual">$39.900</div>
+                                        </div>
+                                        <span class="price-period">/mes</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso a sala de musculación</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso a área cardiovascular</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso ilimitado 24/7</span>
+                                            <button type="button" class="btn btn-link p-0 ms-2 tooltip-btn" 
+                                                data-bs-toggle="tooltip" 
+                                                data-bs-placement="top" 
+                                                data-bs-title="Acceso las 24 horas, todos los días de la semana">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Clases grupales</span>
+                                            <button type="button" class="btn btn-link p-0 ms-2 tooltip-btn" 
+                                                data-bs-toggle="tooltip" 
+                                                data-bs-placement="top" 
+                                                data-bs-title="Acceso a todas las clases grupales según disponibilidad">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                        </li>
+                                        <li class="feature-disabled">
+                                            <i class="fas fa-times"></i>
+                                            <span>Acceso a piscina y sauna</span>
+                                        </li>
+                                        <li class="feature-disabled">
+                                            <i class="fas fa-times"></i>
+                                            <span>Entrenador personal</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-footer mt-auto">
+                                    <a href="contacto.html" class="btn btn-primary">Elegir Plan</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Plan Premium -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="pricing-card h-100">
+                                <div class="pricing-header">
+                                    <h3>Premium</h3>
+                                    <div class="pricing-price">
+                                        <div class="price-container">
+                                            <div class="price monthly">$79.900</div>
+                                            <div class="price annual">$63.900</div>
+                                        </div>
+                                        <span class="price-period">/mes</span>
+                                    </div>
+                                </div>
+                                <div class="pricing-features">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso a sala de musculación</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso a área cardiovascular</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso ilimitado 24/7</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Clases grupales ilimitadas</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>Acceso a piscina y sauna</span>
+                                            <button type="button" class="btn btn-link p-0 ms-2 tooltip-btn" 
+                                                data-bs-toggle="tooltip" 
+                                                data-bs-placement="top" 
+                                                data-bs-title="Incluye acceso ilimitado a piscina climatizada y sauna">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check"></i>
+                                            <span>4 sesiones con entrenador personal</span>
+                                            <button type="button" class="btn btn-link p-0 ms-2 tooltip-btn" 
+                                                data-bs-toggle="tooltip" 
+                                                data-bs-placement="top" 
+                                                data-bs-title="4 sesiones mensuales de 60 minutos con un entrenador personal certificado">
+                                                <i class="fas fa-info-circle"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="pricing-footer mt-auto">
+                                    <a href="contacto.html" class="btn btn-outline">Elegir Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla comparativa de planes -->
+                <div class="comparison-table-container mt-5 mb-5">
+                    <h3 class="text-center mb-4">COMPARATIVA DE PLANES</h3>
+                    <div class="table-responsive">
+                        <table class="table table-hover comparison-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Características</th>
+                                    <th scope="col">Básico</th>
+                                    <th scope="col" class="highlight-column">Estándar</th>
+                                    <th scope="col">Premium</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sala de musculación</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td class="highlight-column"><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Área cardiovascular</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td class="highlight-column"><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Horario</td>
+                                    <td>Limitado (8:00-17:00)</td>
+                                    <td class="highlight-column">24/7</td>
+                                    <td>24/7</td>
+                                </tr>
+                                <tr>
+                                    <td>Clases grupales</td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td class="highlight-column">Limitadas</td>
+                                    <td>Ilimitadas</td>
+                                </tr>
+                                <tr>
+                                    <td>Piscina y sauna</td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td class="highlight-column"><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Entrenador personal</td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td class="highlight-column"><i class="fas fa-times text-danger"></i></td>
+                                    <td>4 sesiones/mes</td>
+                                </tr>
+                                <tr class="price-row monthly-row">
+                                    <td>Precio mensual</td>
+                                    <td class="price-value">$29.900</td>
+                                    <td class="price-value highlight-column">$49.900</td>
+                                    <td class="price-value">$79.900</td>
+                                </tr>
+                                <tr class="price-row annual-row">
+                                    <td>Precio anual (mes)</td>
+                                    <td class="price-value">$23.900</td>
+                                    <td class="price-value highlight-column">$39.900</td>
+                                    <td class="price-value">$63.900</td>
+                                </tr>
+                                <tr>
+                                    <td>Acción</td>
+                                    <td><a href="contacto.html" class="btn btn-sm btn-outline">Elegir</a></td>
+                                    <td class="highlight-column"><a href="contacto.html" class="btn btn-sm btn-primary">Elegir</a></td>
+                                    <td><a href="contacto.html" class="btn btn-sm btn-outline">Elegir</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Información adicional -->
+                <div class="row pricing-info">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Sin Permanencia</h3>
+                                <p>Todos nuestros planes son sin compromiso de permanencia. Puedes cancelar cuando quieras.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Métodos de Pago</h3>
+                                <p>Aceptamos tarjetas de crédito, débito, transferencia bancaria y efectivo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Plan Familiar</h3>
+                                <p>Consulta por nuestros descuentos especiales para planes familiares.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Preguntas Frecuentes con Bootstrap Accordion -->
+        <section class="faq-section section alt-bg" aria-labelledby="faq-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>PREGUNTAS FRECUENTES</h3>
+                    <h2 id="faq-heading">RESOLVEMOS TUS DUDAS</h2>
+                    <p>Encuentra respuestas a las preguntas más comunes sobre nuestros planes y membresías.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">
+                                    ¿Puedo cambiar de plan en cualquier momento?
+                                </button>
+                            </h2>
+                            <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí, puedes cambiar de plan en cualquier momento. Si cambias a un plan de mayor valor, se aplicará el prorrateo correspondiente. Si cambias a un plan de menor valor, el cambio se hará efectivo en tu próximo ciclo de facturación.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                                    ¿Hay alguna tarifa de inscripción?
+                                </button>
+                            </h2>
+                            <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí, existe una tarifa de inscripción única de $15.000 que cubre los gastos administrativos y la emisión de tu tarjeta de acceso. Esta tarifa se cobra solo una vez al inscribirte.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+                                    ¿Cómo funciona el plan anual?
+                                </button>
+                            </h2>
+                            <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>El plan anual ofrece un descuento del 20% sobre el precio mensual. Se paga en una sola cuota por adelantado, cubriendo 12 meses de membresía. Si necesitas cancelar antes, te reembolsaremos el monto proporcional menos un cargo administrativo del 10%.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
+                                    ¿Puedo congelar mi membresía?
+                                </button>
+                            </h2>
+                            <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Sí, puedes congelar tu membresía hasta por 30 días al año sin costo adicional. Para períodos más largos, se aplica un cargo de mantenimiento de $5.000 por mes. Debes solicitar la congelación con al menos 5 días de anticipación.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item faq-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+                                    ¿Qué incluyen las sesiones con entrenador personal?
+                                </button>
+                            </h2>
+                            <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p>Las sesiones con entrenador personal incluyen una evaluación inicial, diseño de un programa personalizado según tus objetivos, y seguimiento de tu progreso. Cada sesión dura 60 minutos y debe ser reservada con anticipación según disponibilidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">COMIENZA TU TRANSFORMACIÓN HOY</h2>
+                <p>Prueba GymHub con nuestra sesión de entrenamiento gratuita y descubre por qué somos la mejor opción.</p>
+                <a href="contacto.html" class="btn btn-dark">RESERVA TU PRUEBA GRATIS</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer simplificado (solo copyright) -->
+    <footer class="footer">
+        <div class="footer-copyright">
+            &copy; 2025 GymHub. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/main.js"></script>
+    <script src="js/precios.js"></script>
+</body>
+</html>

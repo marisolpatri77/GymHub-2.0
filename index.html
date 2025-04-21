@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymHub</title>
+    <meta name="description" content="GymHub, el gimnasio premium que transformará tu cuerpo y mente con instalaciones de última generación y entrenadores profesionales.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Header transparente con mega-menú -->
+    <header class="header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                        <h1>GYM<span>HUB</span></h1>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto main-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Clases <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4  w-100 p-0">
+                                            <h5>Cardio</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4  w-100 p-0">
+                                            <h5>Fuerza</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#crossfit">Crossfit</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#power">Power Lifting</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#funcional">Entrenamiento Funcional</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4  w-100 p-0">
+                                            <h5>Mente-Cuerpo</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Fusion</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Restaurativo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="entrenadores.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Entrenadores <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="entrenadores.html#personal">Entrenadores Personales</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#grupales">Instructores de Clases</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#nutricion">Nutricionistas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Botón para cambiar entre modo oscuro y claro -->
+                <button id="theme-toggle" class="theme-toggle ms-3" aria-label="Cambiar tema" aria-pressed="false">
+                    <i class="fas fa-moon dark-icon" aria-hidden="true"></i>
+                    <i class="fas fa-sun light-icon" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section con video de fondo y texto animado -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-background">
+                <!-- Video de fondo con autoplay, muted y loop -->
+                <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover">
+                    <source src="assets/video/video-gym2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-content container">
+                <h2 id="hero-heading" class="hero-title">SUPERA TUS <span>LÍMITES</span></h2>
+                <p class="hero-subtitle">Transforma tu cuerpo y mente en el gimnasio premium más exclusivo de la ciudad</p>
+                <div class="hero-buttons">
+                    <a href="membresias.html" class="btn btn-primary">EMPIEZA HOY</a>
+                    <a href="#about" class="btn btn-outline">CONOCE MÁS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Acerca de con contador animado -->
+        <section id="about" class="about section" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>BIENVENIDO A GYMHUB</h3>
+                    <h2 id="about-heading">DONDE EL FITNESS SE ENCUENTRA CON LA EXCELENCIA</h2>
+                    <p>En GymHub, creemos que el fitness es más que ejercicio; es un estilo de vida que transforma cuerpos y mentes.</p>
+                </div>
+
+                <div class="row about-grid">
+                    <div class="col-lg-6 about-image">
+                        <img src="assets/img/instalaciones.jpg" alt="Instalaciones de GymHub" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6 about-content">
+                        <p>Fundado en 2010, GymHub ha evolucionado hasta convertirse en el referente de fitness premium en la ciudad. Nuestras instalaciones de vanguardia, entrenadores certificados y programas personalizados están diseñados para ayudarte a alcanzar tus objetivos, sin importar tu nivel de condición física.</p>
+                        
+                        <!-- Contador animado con jQuery -->
+                        <div class="row about-stats">
+                            <div class="col-md-4 stat">
+                                <span class="stat-number counter" data-count="15">0</span>
+                                <span class="stat-text">Años de Experiencia</span>
+                            </div>
+                            <div class="col-md-4 stat">
+                                <span class="stat-number counter" data-count="50">0</span>
+                                <span class="stat-text">Entrenadores Profesionales</span>
+                            </div>
+                            <div class="col-md-4 stat">
+                                <span class="stat-number counter" data-count="5000">0</span>
+                                <span class="stat-text">Miembros Satisfechos</span>
+                            </div>
+                        </div>
+                        
+                        <a href="instalaciones.html" class="btn btn-primary">NUESTRAS INSTALACIONES</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Clases con tarjetas y efectos hover -->
+        <section class="classes section" aria-labelledby="classes-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>NUESTRAS CLASES</h3>
+                    <h2 id="classes-heading">ENTRENA COMO UN PROFESIONAL</h2>
+                    <p>Descubre nuestras clases exclusivas diseñadas para desafiar tus límites y transformar tu cuerpo.</p>
+                </div>
+
+                <div class="row classes-grid">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="class-card card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/hiit.jpg" class="card-img-top" alt="Clase de HIIT">
+                                <div class="class-overlay"></div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">HIIT EXTREME</h3>
+                                <p class="card-text">Entrenamiento de alta intensidad que quema calorías y mejora tu resistencia.</p>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 45 min</span>
+                                    <span><i class="bi bi-fire"></i> Alta intensidad</span>
+                                </div>
+                                <a href="clases.html#hiit" class="class-link">EXPLORAR <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="class-card card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/powelifting.jpg" class="card-img-top" alt="Clase de Power Lifting">
+                                <div class="class-overlay"></div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">POWER LIFTING</h3>
+                                <p class="card-text">Desarrolla fuerza y potencia con nuestro programa de levantamiento de peso.</p>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 60 min</span>
+                                    <span><i class="bi bi-fire"></i> Alta intensidad</span>
+                                </div>
+                                <a href="clases.html#power" class="class-link">EXPLORAR <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="class-card card h-100">
+                            <div class="class-image">
+                                <img src="assets/img/yoga.jpg" class="card-img-top" alt="Clase de Yoga Fusion">
+                                <div class="class-overlay"></div>
+                            </div>
+                            <div class="card-body class-content">
+                                <h3 class="card-title">YOGA FUSION</h3>
+                                <p class="card-text">Combina fuerza y flexibilidad con nuestra clase de yoga de alto rendimiento.</p>
+                                <div class="class-details">
+                                    <span><i class="bi bi-clock"></i> 55 min</span>
+                                    <span><i class="bi bi-heart"></i> Baja intensidad</span>
+                                </div>
+                                <a href="clases.html#yoga" class="class-link">EXPLORAR <i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-lg">
+                    <a href="clases.html" class="btn btn-outline">VER TODAS LAS CLASES</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Características -->
+        <section class="features section" aria-labelledby="features-heading">
+            <div class="container">
+                <div class="row features-grid">
+                    <div class="col-lg-6 features-content">
+                        <h3>INSTALACIONES PREMIUM</h3>
+                        <h2 id="features-heading">EQUIPAMIENTO DE ÚLTIMA GENERACIÓN</h2>
+                        <p>Nuestras instalaciones están equipadas con la última tecnología en fitness para garantizar que cada entrenamiento sea efectivo y seguro.</p>
+                        
+                        <ul class="features-list">
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Zona de entrenamiento funcional de 500m²</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Área de cardio con vistas panorámicas</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Estudio de yoga y pilates</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Piscina climatizada y sauna</li>
+                            <li><i class="fas fa-check" aria-hidden="true"></i> Vestuarios de lujo con amenidades premium</li>
+                        </ul>
+                        
+                        <a href="instalaciones.html" class="btn btn-primary">VISITA VIRTUAL</a>
+                    </div>
+                    
+                    <div class="col-lg-6 features-image">
+                        <img src="assets/img/equipamiento.jpg" alt="Equipamiento de última generación en GymHub" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Entrenadores (Preview) -->
+        <section class="trainers section" aria-labelledby="trainers-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>NUESTRO EQUIPO</h3>
+                    <h2 id="trainers-heading">ENTRENADORES PROFESIONALES</h2>
+                    <p>Nuestros entrenadores certificados están dedicados a ayudarte a alcanzar tus objetivos fitness.</p>
+                </div>
+
+                <div class="row trainers-grid">
+                    <!-- Tarjeta de entrenador con efecto flip -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tarjeta-entrenador">
+                            <div class="tarjeta-entrenador-interior">
+                                <div class="tarjeta-entrenador-frente">
+                                    <img src="assets/img/profe1.jpg" alt="Carlos Martínez - Entrenador de HIIT">
+                                    <div class="trainer-info">
+                                        <h3>Carlos Martínez</h3>
+                                        <p>Entrenador de HIIT</p>
+                                    </div>
+                                </div>
+                                <div class="tarjeta-entrenador-reverso">
+                                    <h3>Carlos Martínez</h3>
+                                    <p>Especialista en entrenamiento de alta intensidad con 10 años de experiencia. Certificado en HIIT, TRX y entrenamiento funcional.</p>
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Carlos Martínez"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Carlos Martínez"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tarjeta-entrenador">
+                            <div class="tarjeta-entrenador-interior">
+                                <div class="tarjeta-entrenador-frente">
+                                    <img src="assets/img/profeyoga.jpg" alt="Laura Gómez - Instructora de Yoga">
+                                    <div class="trainer-info">
+                                        <h3>Laura Gómez</h3>
+                                        <p>Instructora de Yoga</p>
+                                    </div>
+                                </div>
+                                <div class="tarjeta-entrenador-reverso">
+                                    <h3>Laura Gómez</h3>
+                                    <p>Maestra de yoga con más de 8 años de experiencia. Certificada en Hatha, Vinyasa y Yoga Restaurativo.</p>
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Laura Gómez"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Laura Gómez"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tarjeta-entrenador">
+                            <div class="tarjeta-entrenador-interior">
+                                <div class="tarjeta-entrenador-frente">
+                                    <img src="assets/img/trainer-hiit.jpg" alt="Miguel Torres - Entrenador de Fuerza">
+                                    <div class="trainer-info">
+                                        <h3>Miguel Torres</h3>
+                                        <p>Entrenador de Fuerza</p>
+                                    </div>
+                                </div>
+                                <div class="tarjeta-entrenador-reverso">
+                                    <h3>Miguel Torres</h3>
+                                    <p>Especialista en entrenamiento de fuerza y powerlifting. Campeón nacional y entrenador certificado con 12 años de experiencia.</p>
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Miguel Torres"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Miguel Torres"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-lg">
+                    <a href="entrenadores.html" class="btn btn-outline">CONOCE A TODO EL EQUIPO</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Testimonios con carrusel de Bootstrap -->
+        <section class="testimonials section" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>TESTIMONIOS</h3>
+                    <h2 id="testimonials-heading">LO QUE DICEN NUESTROS MIEMBROS</h2>
+                </div>
+
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial-card">
+                                <div class="testimonial-image">
+                                    <img src="assets/img/mujer3.jpg" alt="Ana García">
+                                </div>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p>"GymHub ha transformado completamente mi rutina de ejercicios. Los entrenadores son excepcionales y las instalaciones son de primera clase."</p>
+                                <h4>Ana García</h4>
+                                <span>Miembro desde 2022</span>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="testimonial-image">
+                                    <img src="assets/img/hombre1.jpg" alt="Roberto Sánchez">
+                                </div>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p>"Desde que me uní a GymHub, he visto resultados increíbles. El ambiente es motivador y los entrenadores realmente se preocupan por tu progreso."</p>
+                                <h4>Roberto Sánchez</h4>
+                                <span>Miembro desde 2021</span>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <div class="testimonial-card">
+                                <div class="testimonial-image">
+                                    <img src="assets/img/mujer1.jpg" alt="Elena Martín">
+                                </div>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                </div>
+                                <p>"Las clases de GymHub son desafiantes y divertidas. He conocido a personas increíbles y he logrado metas que nunca pensé posibles."</p>
+                                <h4>Elena Martín</h4>
+                                <span>Miembro desde 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    
+                    <div class="carousel-indicators testimonial-controls">
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">COMPROMÉTETE CON LA EXCELENCIA</h2>
+                <p>Únete hoy y comienza tu transformación con acceso a todas nuestras instalaciones premium.</p>
+                <a href="membresias.html" class="btn btn-dark">ÚNETE AHORA</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer con formulario de newsletter y mapa -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-lg-6 footer-location">
+                    <h2>¿DÓNDE ESTAMOS?</h2>
+                    <h3>CENTRAL</h3>
+                    <p>Juan Bautista Alberdi 11<br>
+                       Barrio Centro<br>
+                       San Salvador de Jujuy</p>
+                    <p class="contact-info">
+                        +54 388 5234 567<br>
+                        info@gymhub.com
+                    </p>
+                    
+                    <!-- Formulario para newsletter con validación Bootstrap -->
+                    <div class="newsletter-form">
+                        <h3>MANTENTE INFORMADO</h3>
+                        <p>Suscríbete a nuestro newsletter para recibir noticias y promociones exclusivas.</p>
+                        <form id="newsletter-form" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Tu correo electrónico" required>
+                                <button type="submit" id="newsletter-button">
+                                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true" id="newsletter-spinner"></span>
+                                    <span id="newsletter-text">SUSCRIBIR</span>
+                                </button>
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor, introduce un correo electrónico válido.
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 footer-map">
+                    <!-- Iframe de Google Maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14558.067581960235!2d-65.29459955259084!3d-24.18867000422116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bae433e99%3A0x6b20d1359e16d579!2sJuan%20Bautista%20Alberdi%2011%2C%20Y4600%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1744257998982!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de GymHub"></iframe>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2025 GymHub. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Modal de confirmación para newsletter -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsletterModalLabel">¡Suscripción Exitosa!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Gracias por suscribirte a nuestro boletín. Recibirás nuestras últimas noticias y promociones directamente en tu correo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/main.js"></script>
+</body>
+</html>

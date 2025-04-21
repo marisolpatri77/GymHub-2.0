@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenadores</title>
+    <meta name="description" content="Conoce a nuestro equipo de entrenadores profesionales en GymHub, expertos en diferentes disciplinas para ayudarte a alcanzar tus objetivos fitness.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/entrenadores.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- Header transparente con mega-menú -->
+    <header class="header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                        <h1>GYM<span>HUB</span></h1>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto main-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Clases <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Cardio</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Fuerza</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#crossfit">Crossfit</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#power">Power Lifting</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#funcional">Entrenamiento Funcional</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Mente-Cuerpo</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Fusion</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Restaurativo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="entrenadores.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-expanded="false">Entrenadores <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="#personal">Entrenadores Personales</a></li>
+                                                <li><a class="dropdown-item" href="#grupales">Instructores de Clases</a></li>
+                                                <li><a class="dropdown-item" href="#nutricion">Nutricionistas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Botón para cambiar entre modo oscuro y claro -->
+                <button id="theme-toggle" class="theme-toggle ms-3" aria-label="Cambiar tema" aria-pressed="false">
+                    <i class="fas fa-moon dark-icon" aria-hidden="true"></i>
+                    <i class="fas fa-sun light-icon" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section para Entrenadores -->
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="hero-background">
+                <img src="assets/img/entrenadores-cover2.jpg" alt="Equipo de entrenadores profesionales" class="w-100 h-100 object-fit-cover" aria-hidden="true">
+            </div>
+            <div class="hero-content container">
+                <h1 id="page-hero-heading" class="animate-on-scroll" data-animation="fadeInDown">NUESTRO <span>EQUIPO</span></h1>
+                <p class="animate-on-scroll" data-animation="fadeInUp" data-delay="300">Conoce a los profesionales que te guiarán en tu camino hacia una mejor versión de ti mismo</p>
+            </div>
+        </section>
+
+        <!-- Sección de Entrenadores Personales -->
+        <section id="personal" class="trainers-section section" aria-labelledby="personal-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>EXPERTOS EN FITNESS</h3>
+                    <h2 id="personal-heading">ENTRENADORES PERSONALES</h2>
+                    <p>Nuestros entrenadores personales están certificados y especializados en diferentes áreas para ayudarte a alcanzar tus objetivos específicos.</p>
+                </div>
+
+                <div class="row trainers-grid">
+                    <!-- Tarjeta de entrenador con efecto flip -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/profe1.jpg" alt="Carlos Martínez" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Carlos Martínez</h3>
+                                        <p>Especialista en HIIT</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-carlos" id="carlos-star5" value="5" class="visually-hidden">
+                                                    <label for="carlos-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-carlos" id="carlos-star4" value="4" class="visually-hidden">
+                                                    <label for="carlos-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-carlos" id="carlos-star3" value="3" class="visually-hidden">
+                                                    <label for="carlos-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-carlos" id="carlos-star2" value="2" class="visually-hidden">
+                                                    <label for="carlos-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-carlos" id="carlos-star1" value="1" class="visually-hidden">
+                                                    <label for="carlos-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="5">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Carlos Martínez</h3>
+                                    <p>Especialista en entrenamiento de alta intensidad con 10 años de experiencia. Certificado en HIIT, TRX y entrenamiento funcional.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Fuerza</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Resistencia</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-skill="90"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Nutrición</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-skill="85"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Carlos Martínez"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Carlos Martínez"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Carlos Martínez"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Reservar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/trainer-hiit.jpg" alt="Miguel Torres" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Miguel Torres</h3>
+                                        <p>Entrenador de Fuerza</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-miguel" id="miguel-star5" value="5" class="visually-hidden">
+                                                    <label for="miguel-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-miguel" id="miguel-star4" value="4" class="visually-hidden">
+                                                    <label for="miguel-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-miguel" id="miguel-star3" value="3" class="visually-hidden">
+                                                    <label for="miguel-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-miguel" id="miguel-star2" value="2" class="visually-hidden">
+                                                    <label for="miguel-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-miguel" id="miguel-star1" value="1" class="visually-hidden">
+                                                    <label for="miguel-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="4.5">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star-half-alt active"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Miguel Torres</h3>
+                                    <p>Especialista en entrenamiento de fuerza y powerlifting. Campeón nacional y entrenador certificado con 12 años de experiencia.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Fuerza</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-skill="98"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Técnica</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Nutrición</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" data-skill="80"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Miguel Torres"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Miguel Torres"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Miguel Torres"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Reservar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/profe-funcional.jpg" alt="Ana Rodríguez" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Ana Rodríguez</h3>
+                                        <p>Entrenadora Funcional</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-ana" id="ana-star5" value="5" class="visually-hidden">
+                                                    <label for="ana-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-ana" id="ana-star4" value="4" class="visually-hidden">
+                                                    <label for="ana-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-ana" id="ana-star3" value="3" class="visually-hidden">
+                                                    <label for="ana-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-ana" id="ana-star2" value="2" class="visually-hidden">
+                                                    <label for="ana-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-ana" id="ana-star1" value="1" class="visually-hidden">
+                                                    <label for="ana-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="4">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">4.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Ana Rodríguez</h3>
+                                    <p>Especialista en entrenamiento funcional y rehabilitación. Certificada en TRX, Pilates y entrenamiento correctivo.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Funcional</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" data-skill="92"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Rehabilitación</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Flexibilidad</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-skill="90"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Ana Rodríguez"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Ana Rodríguez"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Ana Rodríguez"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Reservar Sesión</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Instructores de Clases -->
+        <section id="grupales" class="trainers-section section alt-bg" aria-labelledby="grupales-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>CLASES GRUPALES</h3>
+                    <h2 id="grupales-heading">INSTRUCTORES DE CLASES</h2>
+                    <p>Nuestros instructores de clases grupales están especializados en diferentes disciplinas para ofrecerte una experiencia única en cada sesión.</p>
+                </div>
+
+                <div class="row trainers-grid">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/profeyoga.jpg" alt="Laura Gómez" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Laura Gómez</h3>
+                                        <p>Instructora de Yoga</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-laura" id="laura-star5" value="5" class="visually-hidden">
+                                                    <label for="laura-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-laura" id="laura-star4" value="4" class="visually-hidden">
+                                                    <label for="laura-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-laura" id="laura-star3" value="3" class="visually-hidden">
+                                                    <label for="laura-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-laura" id="laura-star2" value="2" class="visually-hidden">
+                                                    <label for="laura-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-laura" id="laura-star1" value="1" class="visually-hidden">
+                                                    <label for="laura-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="5">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Laura Gómez</h3>
+                                    <p>Maestra de yoga con más de 8 años de experiencia. Certificada en Hatha, Vinyasa y Yoga Restaurativo.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Flexibilidad</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-skill="98"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Meditación</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Alineación</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-skill="90"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Laura Gómez"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Laura Gómez"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Laura Gómez"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Ver Clases</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/profe-spinning.jpg" alt="Roberto Sánchez" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Roberto Sánchez</h3>
+                                        <p>Instructor de Spinning</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-roberto" id="roberto-star5" value="5" class="visually-hidden">
+                                                    <label for="roberto-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-roberto" id="roberto-star4" value="4" class="visually-hidden">
+                                                    <label for="roberto-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-roberto" id="roberto-star3" value="3" class="visually-hidden">
+                                                    <label for="roberto-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-roberto" id="roberto-star2" value="2" class="visually-hidden">
+                                                    <label for="roberto-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-roberto" id="roberto-star1" value="1" class="visually-hidden">
+                                                    <label for="roberto-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="4.5">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star-half-alt active"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Roberto Sánchez</h3>
+                                    <p>Instructor de spinning con 7 años de experiencia. Especializado en clases de alta intensidad y entrenamiento por intervalos.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Resistencia</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Motivación</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-skill="98"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Ritmo</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-skill="90"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Roberto Sánchez"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Roberto Sánchez"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Roberto Sánchez"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Ver Clases</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/profe-zumba.jpg" alt="Elena Martín" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Elena Martín</h3>
+                                        <p>Instructora de Zumba</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-elena" id="elena-star5" value="5" class="visually-hidden">
+                                                    <label for="elena-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-elena" id="elena-star4" value="4" class="visually-hidden">
+                                                    <label for="elena-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-elena" id="elena-star3" value="3" class="visually-hidden">
+                                                    <label for="elena-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-elena" id="elena-star2" value="2" class="visually-hidden">
+                                                    <label for="elena-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-elena" id="elena-star1" value="1" class="visually-hidden">
+                                                    <label for="elena-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="5">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Elena Martín</h3>
+                                    <p>Instructora de Zumba y baile fitness con 6 años de experiencia. Especializada en coreografías dinámicas y divertidas.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Ritmo</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-skill="98"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Coreografía</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Energía</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" data-skill="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Elena Martín"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Elena Martín"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Elena Martín"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Ver Clases</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Nutricionistas -->
+        <section id="nutricion" class="trainers-section section" aria-labelledby="nutricion-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>NUTRICIÓN DEPORTIVA</h3>
+                    <h2 id="nutricion-heading">NUTRICIONISTAS</h2>
+                    <p>Nuestros nutricionistas te ayudarán a complementar tu entrenamiento con una alimentación adecuada para maximizar tus resultados.</p>
+                </div>
+
+                <div class="row trainers-grid">
+                    <div class="col-lg-4 col-md-6 mb-4 mx-auto">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/nutricionista1.jpg" alt="Sofía López" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Sofía López</h3>
+                                        <p>Nutricionista Deportiva</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-sofia" id="sofia-star5" value="5" class="visually-hidden">
+                                                    <label for="sofia-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-sofia" id="sofia-star4" value="4" class="visually-hidden">
+                                                    <label for="sofia-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-sofia" id="sofia-star3" value="3" class="visually-hidden">
+                                                    <label for="sofia-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-sofia" id="sofia-star2" value="2" class="visually-hidden">
+                                                    <label for="sofia-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-sofia" id="sofia-star1" value="1" class="visually-hidden">
+                                                    <label for="sofia-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="4.5">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star-half-alt active"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Sofía López</h3>
+                                    <p>Nutricionista deportiva con 9 años de experiencia. Especializada en planes nutricionales para deportistas y pérdida de peso.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Nutrición Deportiva</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Pérdida de Peso</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" data-skill="90"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Suplementación</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" data-skill="85"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Sofía López"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Sofía López"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Sofía López"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Consulta Nutricional</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mx-auto">
+                        <div class="trainer-card">
+                            <div class="trainer-card-inner">
+                                <div class="trainer-card-front">
+                                    <div class="trainer-image">
+                                        <img src="assets/img/nutricionista2.jpg" alt="Javier Ruiz" class="img-fluid">
+                                    </div>
+                                    <div class="trainer-info">
+                                        <h3>Javier Ruiz</h3>
+                                        <p>Nutricionista Clínico</p>
+                                        <!-- Sistema de rating con estrellas -->
+                                        <div class="trainer-rating">
+                                            <div class="stars-container">
+                                                <div class="stars-input">
+                                                    <input type="radio" name="rating-javier" id="javier-star5" value="5" class="visually-hidden">
+                                                    <label for="javier-star5"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-javier" id="javier-star4" value="4" class="visually-hidden">
+                                                    <label for="javier-star4"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-javier" id="javier-star3" value="3" class="visually-hidden">
+                                                    <label for="javier-star3"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-javier" id="javier-star2" value="2" class="visually-hidden">
+                                                    <label for="javier-star2"><i class="fas fa-star"></i></label>
+                                                    
+                                                    <input type="radio" name="rating-javier" id="javier-star1" value="1" class="visually-hidden">
+                                                    <label for="javier-star1"><i class="fas fa-star"></i></label>
+                                                </div>
+                                                <div class="stars-display" data-rating="4">
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="fas fa-star active"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <span class="rating-text">4.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trainer-card-back">
+                                    <h3>Javier Ruiz</h3>
+                                    <p>Nutricionista clínico con 11 años de experiencia. Especializado en nutrición para patologías y condiciones especiales.</p>
+                                    
+                                    <!-- Barras de habilidades animadas con Bootstrap -->
+                                    <div class="skills">
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Nutrición Clínica</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" data-skill="98"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Patologías</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" data-skill="95"></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="skill-name">Nutrición Deportiva</span>
+                                                <span class="skill-percentage">0%</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" data-skill="80"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="trainer-social">
+                                        <a href="#" aria-label="Instagram de Javier Ruiz"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" aria-label="LinkedIn de Javier Ruiz"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" aria-label="Twitter de Javier Ruiz"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    
+                                    <a href="#" class="btn btn-outline">Consulta Nutricional</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">ENTRENA CON LOS MEJORES</h2>
+                <p>Reserva una sesión con nuestros entrenadores profesionales y comienza tu transformación hoy mismo.</p>
+                <a href="contacto.html" class="btn btn-dark">CONTACTAR AHORA</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer simplificado (solo copyright) -->
+    <footer class="footer">
+        <div class="footer-copyright">
+            &copy; 2025 GymHub. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/main.js"></script>
+    <script src="js/entrenadores.js"></script>
+</body>
+</html>

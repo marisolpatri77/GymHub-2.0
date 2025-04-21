@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <meta name="description" content="Descubre los mejores consejos de fitness, nutrición y bienestar en el blog de GymHub. Artículos escritos por profesionales del fitness.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS CSS para animaciones de scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- Header transparente con mega-menú -->
+    <header class="header sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="logo">
+                    <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                        <h1>GYM<span>HUB</span></h1>
+                    </a>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto main-menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="clases.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Clases <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Cardio</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#hiit">HIIT</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#spinning">Spinning</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#zumba">Zumba</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Fuerza</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#crossfit">Crossfit</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#power">Power Lifting</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#funcional">Entrenamiento Funcional</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 w-100 p-0">
+                                            <h5>Mente-Cuerpo</h5>
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Fusion</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#pilates">Pilates</a></li>
+                                                <li><a class="dropdown-item" href="clases.html#yoga">Yoga Restaurativo</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown has-submenu">
+                            <a href="entrenadores.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Entrenadores <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu mega-menu">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <ul class="list-unstyled">
+                                                <li><a class="dropdown-item" href="entrenadores.html#personal">Entrenadores Personales</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#grupales">Instructores de Clases</a></li>
+                                                <li><a class="dropdown-item" href="entrenadores.html#nutricion">Nutricionistas</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="precios.html" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link active">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Botón para cambiar entre modo oscuro y claro -->
+                <button id="theme-toggle" class="theme-toggle ms-3" aria-label="Cambiar tema" aria-pressed="false">
+                    <i class="fas fa-moon dark-icon" aria-hidden="true"></i>
+                    <i class="fas fa-sun light-icon" aria-hidden="true"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section para Blog -->
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="hero-background">
+                <img src="assets/img/cover-blog4.jpg" alt="Personas leyendo artículos de fitness" class="w-100 h-100 object-fit-cover" aria-hidden="true">
+            </div>
+            <div class="hero-content container">
+                <h1 id="page-hero-heading" class="animate-on-scroll" data-animation="fadeInDown">NUESTRO <span>BLOG</span></h1>
+                <p class="animate-on-scroll" data-animation="fadeInUp" data-delay="300">Descubre los mejores consejos de fitness, nutrición y bienestar para alcanzar tus objetivos</p>
+            </div>
+        </section>
+
+        <!-- Sección de Blog con Filtros -->
+        <section class="blog-section section" aria-labelledby="blog-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>CONOCIMIENTO FITNESS</h3>
+                    <h2 id="blog-heading">ARTÍCULOS RECIENTES</h2>
+                    <p>Artículos escritos por nuestros profesionales para ayudarte en tu camino hacia una vida más saludable.</p>
+                </div>
+
+                <!-- Sistema de filtrado por categorías con Bootstrap y jQuery -->
+                <div class="blog-filter mb-5">
+                    <h3 class="mb-3">Filtrar por categoría:</h3>
+                    <div class="filter-options d-flex flex-wrap justify-content-center gap-2">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="nutrition">Nutrición</button>
+                        <button class="filter-btn" data-filter="training">Entrenamiento</button>
+                        <button class="filter-btn" data-filter="wellness">Bienestar</button>
+                        <button class="filter-btn" data-filter="motivation">Motivación</button>
+                    </div>
+                </div>
+
+                <!-- Diseño tipo newspaper con CSS Grid y Bootstrap -->
+                <div class="row blog-grid">
+                    <!-- Artículo Principal (Featured) -->
+                    <div class="col-lg-8 mb-4">
+                        <article class="blog-article featured-article" data-category="training" data-aos="fade-up">
+                            <div class="article-image">
+                                <img src="assets/img/articulo-principal.jpg" alt="Entrenamiento de fuerza para principiantes" class="img-fluid">
+                                <div class="article-category">Entrenamiento</div>
+                            </div>
+                            <div class="article-content">
+                                <h3>Entrenamiento de fuerza para principiantes: Guía completa</h3>
+                                <div class="article-meta">
+                                    <span class="article-author">Por María Rodríguez</span>
+                                    <span class="article-date">15 de Abril, 2025</span>
+                                    <span class="article-time"><i class="far fa-clock"></i> 8 min de lectura</span>
+                                </div>
+                                <p>El entrenamiento de fuerza es fundamental para mejorar tu condición física, aumentar tu metabolismo y prevenir lesiones. En esta guía completa, te explicamos todo lo que necesitas saber para comenzar con el entrenamiento de fuerza, incluso si nunca has pisado un gimnasio.</p>
+                                <div class="article-tags">
+                                    <span class="tag">Principiantes</span>
+                                    <span class="tag">Fuerza</span>
+                                    <span class="tag">Técnica</span>
+                                </div>
+                                <a href="#article-section" class="btn btn-sm">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artículo Regular 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="blog-article h-100" data-category="nutrition" data-aos="fade-up" data-aos-delay="100">
+                            <div class="article-image">
+                                <img src="assets/img/articulo-nutricion.jpg" alt="Proteínas vegetales" class="img-fluid">
+                                <div class="article-category">Nutrición</div>
+                            </div>
+                            <div class="article-content">
+                                <h3>Las mejores fuentes de proteína vegetal para deportistas</h3>
+                                <div class="article-meta">
+                                    <span class="article-author">Por Carlos Méndez</span>
+                                    <span class="article-date">10 de Abril, 2025</span>
+                                </div>
+                                <p>Descubre cómo obtener suficiente proteína en una dieta basada en plantas para optimizar tu rendimiento deportivo y recuperación muscular.</p>
+                                <div class="article-tags">
+                                    <span class="tag">Proteínas</span>
+                                    <span class="tag">Vegano</span>
+                                </div>
+                                <a href="#" class="btn btn-sm">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artículo Regular 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="blog-article h-100" data-category="training" data-aos="fade-up" data-aos-delay="200">
+                            <div class="article-image">
+                                <img src="assets/img/articulo-training.jpg" alt="Rutina HIIT" class="img-fluid">
+                                <div class="article-category">Entrenamiento</div>
+                            </div>
+                            <div class="article-content">
+                                <h3>HIIT vs Cardio tradicional: ¿Cuál es mejor para quemar grasa?</h3>
+                                <div class="article-meta">
+                                    <span class="article-author">Por Ana Torres</span>
+                                    <span class="article-date">5 de Abril, 2025</span>
+                                </div>
+                                <p>Comparamos el entrenamiento de alta intensidad por intervalos (HIIT) con el cardio tradicional para ayudarte a decidir cuál es la mejor opción según tus objetivos.</p>
+                                <div class="article-tags">
+                                    <span class="tag">HIIT</span>
+                                    <span class="tag">Cardio</span>
+                                    <span class="tag">Quema de grasa</span>
+                                </div>
+                                <a href="#" class="btn btn-sm">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artículo Regular 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="blog-article h-100" data-category="wellness" data-aos="fade-up" data-aos-delay="300">
+                            <div class="article-image">
+                                <img src="assets/img/articulo-meditacion.jpg" alt="Meditación y ejercicio" class="img-fluid">
+                                <div class="article-category">Bienestar</div>
+                            </div>
+                            <div class="article-content">
+                                <h3>Cómo la meditación puede mejorar tu rendimiento deportivo</h3>
+                                <div class="article-meta">
+                                    <span class="article-author">Por Laura Sánchez</span>
+                                    <span class="article-date">1 de Abril, 2025</span>
+                                </div>
+                                <p>La meditación no solo beneficia tu mente, sino que también puede tener un impacto significativo en tu rendimiento físico. Aprende técnicas simples para incorporar la meditación a tu rutina.</p>
+                                <div class="article-tags">
+                                    <span class="tag">Meditación</span>
+                                    <span class="tag">Mindfulness</span>
+                                    <span class="tag">Rendimiento</span>
+                                </div>
+                                <a href="#" class="btn btn-sm">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artículo Regular 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="blog-article h-100" data-category="motivation" data-aos="fade-up" data-aos-delay="400">
+                            <div class="article-image">
+                                <img src="assets/img/articulo-motivacion.jpg" alt="Motivación fitness" class="img-fluid">
+                                <div class="article-category">Motivación</div>
+                            </div>
+                            <div class="article-content">
+                                <h3>5 estrategias para mantener la motivación en tu rutina de ejercicios</h3>
+                                <div class="article-meta">
+                                    <span class="article-author">Por Diego Ramírez</span>
+                                    <span class="article-date">28 de Marzo, 2025</span>
+                                </div>
+                                <p>Mantener la constancia es uno de los mayores desafíos en el fitness. Descubre estrategias prácticas para no perder la motivación y alcanzar tus metas a largo plazo.</p>
+                                <div class="article-tags">
+                                    <span class="tag">Motivación</span>
+                                    <span class="tag">Constancia</span>
+                                    <span class="tag">Hábitos</span>
+                                </div>
+                                <a href="#" class="btn btn-sm">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artículo Regular 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="blog-article h-100" data-category="nutrition" data-aos="fade-up" data-aos-delay="500">
+                            <div class="article-image">
+                                <img src="assets/img/articulo-nutricion3.jpg" alt="Alimentación pre-entrenamiento" class="img-fluid">
+                                <div class="article-category">Nutrición</div>
+                            </div>
+                            <div class="article-content">
+                                <h3>Qué comer antes y después de entrenar para maximizar resultados</h3>
+                                <div class="article-meta">
+                                    <span class="article-author">Por Sofía Martínez</span>
+                                    <span class="article-date">25 de Marzo, 2025</span>
+                                </div>
+                                <p>La nutrición adecuada antes y después del ejercicio puede marcar una gran diferencia en tu rendimiento y recuperación. Aprende qué alimentos son ideales para cada momento.</p>
+                                <div class="article-tags">
+                                    <span class="tag">Pre-workout</span>
+                                    <span class="tag">Post-workout</span>
+                                    <span class="tag">Recuperación</span>
+                                </div>
+                                <a href="#" class="btn btn-sm">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artículo Regular 6 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <article class="blog-article h-100" data-category="wellness" data-aos="fade-up" data-aos-delay="600">
+                            <div class="article-image">
+                                <img src="assets/img/articulo-descanso.jpg" alt="Calidad del sueño" class="img-fluid">
+                                <div class="article-category">Bienestar</div>
+                            </div>
+                            <div class="article-content">
+                                <h3>La importancia del sueño en la recuperación muscular</h3>
+                                <div class="article-meta">
+                                    <span class="article-author">Por Javier López</span>
+                                    <span class="article-date">20 de Marzo, 2025</span>
+                                </div>
+                                <p>El sueño es tan importante como el entrenamiento y la nutrición para lograr tus objetivos fitness. Descubre cómo optimizar tu descanso para mejorar tu recuperación muscular.</p>
+                                <div class="article-tags">
+                                    <span class="tag">Sueño</span>
+                                    <span class="tag">Recuperación</span>
+                                    <span class="tag">Descanso</span>
+                                </div>
+                                <a href="#" class="btn btn-sm">Leer más</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Mensaje de no hay resultados -->
+                <div id="no-results" class="text-center py-5 d-none">
+                    <i class="fas fa-search fa-3x mb-3 text-muted"></i>
+                    <h3>No se encontraron artículos</h3>
+                    <p>No hay artículos que coincidan con el filtro seleccionado.</p>
+                    <button class="btn btn-outline-warning mt-3" id="reset-filter">Ver todos los artículos</button>
+                </div>
+
+                <!-- Paginación con Bootstrap -->
+                <nav aria-label="Paginación del blog">
+                    <ul class="pagination justify-content-center mt-5">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" aria-label="Anterior">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Siguiente">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Sección de Artículo Abierto con Comentarios -->
+        <section id="article-section" class="article-section section alt-bg" aria-labelledby="article-heading">
+            <div class="container">
+                <div class="section-header">
+                    <h3>ARTÍCULO DESTACADO</h3>
+                    <h2 id="article-heading">ENTRENAMIENTO DE FUERZA PARA PRINCIPIANTES</h2>
+                </div>
+
+                <div class="full-article">
+                    <div class="article-header">
+                        <div class="article-meta">
+                            <div class="author-info">
+                                <div class="author-avatar">
+                                    <img src="assets/img/blogger.jpg" alt="María Rodríguez" class="img-fluid">
+                                </div>
+                                <div class="author-details">
+                                    <h4>María Rodríguez</h4>
+                                    <p>Entrenadora Personal Certificada</p>
+                                </div>
+                            </div>
+                            <div class="article-stats">
+                                <span><i class="far fa-calendar"></i> 15 de Abril, 2025</span>
+                                <span><i class="far fa-clock"></i> 8 min de lectura</span>
+                                <span><i class="far fa-comment"></i> <span id="comment-count">12</span> comentarios</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-body">
+                        <p class="article-intro">El entrenamiento de fuerza es uno de los pilares fundamentales para mejorar tu condición física, aumentar tu metabolismo y prevenir lesiones. Sin embargo, para muchos principiantes, puede resultar intimidante dar los primeros pasos en el mundo de las pesas y las máquinas.</p>
+
+                        <p>En esta guía completa, te explicaremos todo lo que necesitas saber para comenzar con el entrenamiento de fuerza, incluso si nunca has pisado un gimnasio. Desde los beneficios que obtendrás hasta los ejercicios básicos que deberías dominar.</p>
+
+                        <h3>Beneficios del entrenamiento de fuerza</h3>
+
+                        <p>Antes de entrar en detalles sobre cómo empezar, es importante entender por qué el entrenamiento de fuerza es tan beneficioso:</p>
+
+                        <ul>
+                            <li><strong>Aumento de masa muscular:</strong> El entrenamiento de fuerza estimula el crecimiento muscular, lo que mejora tu apariencia física y funcionalidad.</li>
+                            <li><strong>Mayor metabolismo:</strong> El músculo quema más calorías en reposo que la grasa, lo que te ayuda a mantener un peso saludable.</li>
+                            <li><strong>Fortalecimiento óseo:</strong> Ayuda a prevenir la osteoporosis al aumentar la densidad ósea.</li>
+                            <li><strong>Mejora de la postura:</strong> Fortalece los músculos que mantienen tu cuerpo alineado correctamente.</li>
+                            <li><strong>Prevención de lesiones:</strong> Músculos más fuertes protegen mejor tus articulaciones y ligamentos.</li>
+                        </ul>
+
+                        <div class="article-quote">
+                            <blockquote>
+                                "El entrenamiento de fuerza no se trata solo de construir músculos, sino de construir una mejor versión de ti mismo, más fuerte y más saludable."
+                            </blockquote>
+                        </div>
+
+                        <h3>Ejercicios fundamentales para principiantes</h3>
+
+                        <p>Si estás comenzando, es recomendable enfocarte en los ejercicios compuestos, que trabajan múltiples grupos musculares a la vez. Estos son algunos de los más efectivos:</p>
+
+                        <ol>
+                            <li><strong>Sentadillas:</strong> Trabajan principalmente piernas y glúteos, pero también involucran el core.</li>
+                            <li><strong>Peso muerto:</strong> Excelente para fortalecer la parte posterior del cuerpo, incluyendo espalda baja, glúteos y isquiotibiales.</li>
+                            <li><strong>Press de banca:</strong> Desarrolla el pecho, hombros y tríceps.</li>
+                            <li><strong>Remo con barra:</strong> Fortalece la espalda y los bíceps.</li>
+                            <li><strong>Press militar:</strong> Trabaja los hombros y tríceps.</li>
+                        </ol>
+
+                        <div class="article-tip">
+                            <h4><i class="fas fa-lightbulb"></i> Consejo para principiantes</h4>
+                            <p>Comienza con poco peso y enfócate en dominar la técnica correcta antes de aumentar la carga. Es mejor hacer 10 repeticiones perfectas que 20 con mala forma.</p>
+                        </div>
+
+                        <p>En los próximos artículos, profundizaremos en cada uno de estos ejercicios, explicando la técnica correcta y cómo progresar de manera segura.</p>
+
+                        <div class="article-cta">
+                            <p>¿Quieres aprender más sobre entrenamiento de fuerza? Consulta con nuestros entrenadores personales para una evaluación personalizada.</p>
+                            <a href="contacto.html" class="btn btn-primary">Reserva una consulta</a>
+                        </div>
+                    </div>
+
+                    <!-- Sección de Comentarios con Bootstrap y jQuery -->
+                    <div class="comments-section">
+                        <h3>Comentarios (<span id="comments-count">12</span>)</h3>
+
+                        <div class="comment-form">
+                            <h4>Deja tu comentario</h4>
+                            <form id="comment-form" class="needs-validation" novalidate>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3 mb-md-0">
+                                        <label for="comment-name" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="comment-name" placeholder="Tu nombre" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa tu nombre.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="comment-email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="comment-email" placeholder="Tu email" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa un email válido.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comment-text" class="form-label">Comentario</label>
+                                    <textarea class="form-control" id="comment-text" rows="5" placeholder="Escribe tu comentario aquí..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Por favor escribe tu comentario.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary" id="submit-comment">
+                                    <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true" id="comment-spinner"></span>
+                                    Publicar comentario
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="comments-list mt-5">
+                            <!-- Comentario 1 -->
+                            <div class="comment" id="comment-1">
+                                <div class="comment-avatar" data-initial="L"></div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <h4>Laura Gómez</h4>
+                                        <span class="comment-date">17 de Abril, 2025</span>
+                                    </div>
+                                    <p>¡Excelente artículo! Justo lo que necesitaba para comenzar mi entrenamiento de fuerza. La explicación de los ejercicios básicos es muy clara. ¿Podrías recomendar cuántos días a la semana debería entrenar como principiante?</p>
+                                    <div class="comment-actions">
+                                        <button class="btn-link comment-reply-btn" data-comment-id="1"><i class="fas fa-reply me-1"></i>Responder</button>
+                                        <button class="btn-link comment-like-btn" data-comment-id="1"><i class="far fa-heart me-1"></i><span class="like-count">5</span></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Respuesta al Comentario 1 -->
+                            <div class="comment comment-reply" id="reply-1">
+                                <div class="comment-avatar author-reply" data-initial="M"></div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <h4>María Rodríguez <span class="author-badge">Autor</span></h4>
+                                        <span class="comment-date">17 de Abril, 2025</span>
+                                    </div>
+                                    <p>¡Gracias por tu comentario, Laura! Como principiante, te recomendaría empezar con 2-3 días de entrenamiento de fuerza por semana, dejando al menos un día de descanso entre sesiones para permitir que tus músculos se recuperen. Puedes complementar con actividad cardiovascular ligera en los días de descanso.</p>
+                                </div>
+                            </div>
+
+                            <!-- Comentario 2 -->
+                            <div class="comment" id="comment-2">
+                                <div class="comment-avatar" data-initial="R"></div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <h4>Roberto Fernández</h4>
+                                        <span class="comment-date">16 de Abril, 2025</span>
+                                    </div>
+                                    <p>Tengo 45 años y nunca he hecho entrenamiento de fuerza. ¿Es seguro comenzar a mi edad? Tengo algo de dolor en las rodillas de vez en cuando.</p>
+                                    <div class="comment-actions">
+                                        <button class="btn-link comment-reply-btn" data-comment-id="2"><i class="fas fa-reply me-1"></i>Responder</button>
+                                        <button class="btn-link comment-like-btn" data-comment-id="2"><i class="far fa-heart me-1"></i><span class="like-count">3</span></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Respuesta al Comentario 2 -->
+                            <div class="comment comment-reply" id="reply-2">
+                                <div class="comment-avatar author-reply" data-initial="M"></div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <h4>María Rodríguez <span class="author-badge">Autor</span></h4>
+                                        <span class="comment-date">16 de Abril, 2025</span>
+                                    </div>
+                                    <p>¡Hola Roberto! Nunca es tarde para comenzar con el entrenamiento de fuerza, y de hecho, puede ser especialmente beneficioso a medida que envejecemos. Sin embargo, con tu historial de molestias en las rodillas, te recomendaría consultar primero con un médico y luego trabajar con un entrenador personal que pueda adaptar los ejercicios a tus necesidades específicas. Hay muchas modificaciones que pueden hacerse para proteger tus articulaciones mientras te fortaleces.</p>
+                                </div>
+                            </div>
+
+                            <!-- Comentario 3 -->
+                            <div class="comment" id="comment-3">
+                                <div class="comment-avatar" data-initial="C"></div>
+                                <div class="comment-content">
+                                    <div class="comment-header">
+                                        <h4>Carolina Díaz</h4>
+                                        <span class="comment-date">15 de Abril, 2025</span>
+                                    </div>
+                                    <p>Me encantó el artículo. Una pregunta: ¿es necesario tomar suplementos de proteína cuando se comienza con el entrenamiento de fuerza o es suficiente con una buena alimentación?</p>
+                                    <div class="comment-actions">
+                                        <button class="btn-link comment-reply-btn" data-comment-id="3"><i class="fas fa-reply me-1"></i>Responder</button>
+                                        <button class="btn-link comment-like-btn" data-comment-id="3"><i class="far fa-heart me-1"></i><span class="like-count">7</span></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Área para responder a comentarios (inicialmente oculta) -->
+                            <div class="reply-form d-none" id="reply-form">
+                                <form id="comment-reply-form" class="needs-validation" novalidate>
+                                    <input type="hidden" id="parent-comment-id" value="">
+                                    <div class="mb-3">
+                                        <label for="reply-name" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="reply-name" placeholder="Tu nombre" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingresa tu nombre.
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="reply-text" class="form-label">Respuesta</label>
+                                        <textarea class="form-control" id="reply-text" rows="3" placeholder="Escribe tu respuesta aquí..." required></textarea>
+                                        <div class="invalid-feedback">
+                                            Por favor escribe tu respuesta.
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <button type="submit" class="btn btn-primary btn-sm" id="submit-reply">
+                                            <span class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true" id="reply-spinner"></span>
+                                            Publicar respuesta
+                                        </button>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" id="cancel-reply">Cancelar</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Ver más comentarios -->
+                            <div class="load-more-comments text-center mt-4">
+                                <button class="btn btn-outline-warning" id="load-more-comments">Ver más comentarios</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta section" aria-labelledby="cta-heading">
+            <div class="container">
+                <h2 id="cta-heading">¿QUIERES RECIBIR NUESTROS ARTÍCULOS?</h2>
+                <p>Suscríbete a nuestro newsletter y recibe semanalmente los mejores consejos de fitness y bienestar.</p>
+                <form class="cta-form row justify-content-center">
+                    <div class="col-md-6 col-lg-4 mb-3 mb-md-0">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <div class="col-md-auto">
+                        <button type="submit" class="btn btn-dark w-100">SUSCRIBIRME</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer simplificado (solo copyright) -->
+    <footer class="footer">
+        <div class="footer-copyright">
+            &copy; 2025 GymHub. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS para animaciones de scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

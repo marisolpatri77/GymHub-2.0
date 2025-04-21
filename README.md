@@ -2,7 +2,8 @@
 
 Sitio web institucional para un gimnasio moderno, diseñado como parte de un trabajo práctico universitario. **GymHub 2.0** es una evolución del proyecto original, con una estética más profesional, nuevas secciones interactivas y una experiencia de usuario mejorada.
 
-![GymHub 2.0 Banner](ruta/a/tu/captura.png)
+![image](https://github.com/user-attachments/assets/14ce5fbc-dcfb-4641-851c-06896516189e)
+
 
 ## 🚀 Demo
 
@@ -86,20 +87,22 @@ Sitio web institucional para un gimnasio moderno, diseñado como parte de un tra
 
 ---
 
-## 🖼️ Capturas recomendadas
+## 🖼️ Capturas
 
-Te recomiendo capturar y agregar imágenes/GIFs de estas secciones:
 - Vista del **hero con video de fondo**
-- Tarjetas de **clases filtrables**
-- **Tabla de horarios**
-- Tarjetas flip de **entrenadores**
-- Toggle de precios mensual/anual
-- Sección de comentarios del blog
-- Modal de confirmación en contacto
+  ![image](https://github.com/user-attachments/assets/70189f19-81bd-4866-b6c4-bc10c7fbb7a5)
 
-📸 **Herramientas sugeridas:**
-- Captura estática: `Windows + Shift + S` o [Lightshot](https://app.prntscr.com/)
-- Grabación rápida en GIF: [Licecap](https://www.cockos.com/licecap/) o [ScreenToGif](https://www.screentogif.com/)
+- Tarjetas de **clases filtrables**
+  ![image](https://github.com/user-attachments/assets/0226d539-8683-45f2-8363-884432bf9cbb)
+
+- Tarjetas flip de **entrenadores**
+  ![Captura de pantalla 2025-04-21 041009](https://github.com/user-attachments/assets/d43835ef-8085-41b8-b7ee-b89012946f78)
+
+- Toggle de precios mensual/anual
+  ![image](https://github.com/user-attachments/assets/394e552c-078a-4450-a152-918619666b29)
+
+- Modal de confirmación en contacto
+![image](https://github.com/user-attachments/assets/bb34c445-e92d-4b38-bd4d-ac8b1938c026)
 
 ---
 
@@ -119,7 +122,7 @@ Te recomiendo capturar y agregar imágenes/GIFs de estas secciones:
 
 ## 👩‍💻 Autor
 
-**Marisol Patricia**  
+**Marisol Patricia Castillo**  
 [GitHub](https://github.com/marisolpatri77)
 
 ---

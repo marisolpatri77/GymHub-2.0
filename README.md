@@ -7,7 +7,7 @@ Sitio web institucional para un gimnasio moderno, diseñado como parte de un tra
 
 ## 🚀 Demo
 
-📍**Enlace online (GitHub Pages):** _[Pendiente de publicación](#)_
+📍**Enlace online (GitHub Pages):** https://marisolpatri77.github.io/GymHub-2.0/
 
 ---
 
